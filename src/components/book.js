@@ -1,11 +1,13 @@
 
 import Heather from './heather'
+import BookForm from './bookForm'
 const Book = () =>
 {
 return(
-<>
-<Heather />
-        </>
+        <div className='App'>
+            <Heather />
+            <BookForm classname='section'/>
+        </div>
         )
 }
 

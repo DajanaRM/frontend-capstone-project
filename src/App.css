@@ -90,9 +90,9 @@ main{
     width: 30em;
     height:16em;
     overflow: hidden;
-    overflow:hidden;
     float:right;
     border-radius: 4px;
+    object-fit: cover
 }
 
 .section{
