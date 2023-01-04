@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import './assets/style/style.scss';
 import Main from './components/landingPage'
 import Menu from './components/menu'
 import Book from './components/book'

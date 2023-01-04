@@ -187,3 +187,7 @@ a:hover {
         flex-direction: column
     }
 }
+
+::placeholder, input :not(.numInput) {
+    color: black!important
+}

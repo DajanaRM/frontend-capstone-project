@@ -4,8 +4,8 @@ import { Calendar } from 'react-feather'
 
 import Heather from './heather'
 require("flatpickr/dist/themes/material_green.css")
-const BookForm = () =>
-{
+const BookForm = () => {
+    const tables = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((a) => <option value={a}>{a}</option>)
 return(
     <>
        <div className='columns' >
@@ -25,9 +25,17 @@ return(
                      />
                 
            </div>
+           <div>
+           <label>
+           Number of tables
+           <select>
+           {tables}
+           </select>
+           </label>
+           </div>
             <div >
             <Flatpickr
-                    title= 'Select Time'
+                    placeholder= 'From'
                    // className='form-control flat-picker bg-transparent border-0 shadow-none'
                     options={{
                         mode: "range",
@@ -39,13 +47,13 @@ return(
                         maxDate: "20:00"
                       
                     }}
-                    style={{textIndent: '15px' }}
+                    style={{textIndent: '15px'}}
                      />
-             </div> 
+              
              <p>To </p>
-             <div >
+             
             <Flatpickr
-                    title= 'Select Time'
+                    placeholder= 'To'
                    // className='form-control flat-picker bg-transparent border-0 shadow-none'
                     options={{
                         mode: "range",
@@ -61,7 +69,7 @@ return(
                      />
              </div> 
              </div>
-   
+            
              <button>Confirm</button>
              </>
         )
