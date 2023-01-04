@@ -1,5 +1,4 @@
 import Flatpickr from 'react-flatpickr'
-import { Calendar } from 'react-feather'
 
 
 import Heather from './heather'
@@ -10,13 +9,12 @@ return(
     <>
        <div className='columns' >
        <div  >
-                <Calendar size={17} id="calendar-icon" />
+               
                 <Flatpickr
-                    title= 'Select Date'
+                    placeholder= 'Select Date'
                     className='form-control flat-picker bg-transparent border-0 shadow-none'
                     options={{
                         inline:true,
-                        defaultDate: 'today',
                         minDate: 'today',                        
                         dateFormat: "m-d-y",
                         
@@ -25,14 +23,7 @@ return(
                      />
                 
            </div>
-           <div>
-           <label>
-           Number of tables
-           <select>
-           {tables}
-           </select>
-           </label>
-           </div>
+           
             <div >
             <Flatpickr
                     placeholder= 'From'
@@ -47,10 +38,9 @@ return(
                         maxDate: "20:00"
                       
                     }}
-                    style={{textIndent: '15px'}}
+                   
                      />
-              
-             <p>To </p>
+             
              
             <Flatpickr
                     placeholder= 'To'
@@ -65,9 +55,17 @@ return(
                         maxDate: "22:00"
                       
                     }}
-                    style={{textIndent: '15px' }}
+                   
                      />
              </div> 
+             <div>
+                   <label>
+                   Number of tables<br/>
+                   <select>
+                   {tables}
+                   </select>
+                   </label>
+            </div>
              </div>
             
              <button>Confirm</button>

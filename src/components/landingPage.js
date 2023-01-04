@@ -6,6 +6,7 @@ import Book from '../assets/book.jpg'
 import Info from '../assets/info.jpg'
 import Logo2 from '../assets/Asset 18@4x.png'
 import Heather from './heather'
+import {Link} from 'react-router-dom'
 
 const Main = () =>
 {
@@ -28,7 +29,7 @@ return(
                         <h2>Our New Menu</h2>
                             <img src={Menu}/>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Auctor neque vitae tempus quam. Sed enim ut sem viverra aliquet eget sit. Felis bibendum ut tristique et egestas quis. Lacus luctus accumsan tortor posuere ac ut consequat. Et molestie ac feugiat sed lectus. Lacus sed viverra tellus in. Urna neque viverra justo nec ultrices. Nullam ac tortor vitae purus faucibus ornare. Sem fringilla ut morbi tincidunt.</p>
-                            <a href=''>See our new menu</a>
+                            <Link to='/menu'>See our new menu</Link>
                     </div>
                 </div>
                 <div>
@@ -37,7 +38,7 @@ return(
                     <h2>Book a Table</h2>
                         <img src={Book}/>
                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Auctor neque vitae tempus quam. Sed enim ut sem viverra aliquet eget sit. Felis bibendum ut tristique et egestas quis. Lacus luctus accumsan tortor posuere ac ut consequat. Et molestie ac feugiat sed lectus. Lacus sed viverra tellus in. Urna neque viverra justo nec ultrices. Nullam ac tortor vitae purus faucibus ornare. Sem fringilla ut morbi tincidunt.</p>
-                         <a href=''>Book your table now</a>
+                         <Link to='/book-a-table'>Book your table now</Link>
                     </div>
                 </div>
                 <div>
@@ -47,9 +48,9 @@ return(
                         <img src={Info}/>
                         <div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Auctor neque vitae tempus quam. Sed enim ut sem viverra aliquet eget sit. Felis bibendum ut tristique et egestas quis.</p>
-                            <p> Mon - Fri:2pm - 10pm<br/>
-                              Sat:2pm - 11pm<br/>
-                              Sun:2pm - 9pm
+                            <p> Mon - Fri: 2pm - 10pm<br/><br/>
+                              Sat: 2pm - 11pm<br/><br/>
+                              Sun: 2pm - 9pm
                              </p>
                         </div>
                     </div>

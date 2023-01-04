@@ -31,7 +31,7 @@ nav a{
 
 nav{
     border-radius:15px;
-    background: #333333; 
+    background: #405C53; 
     text-align: center;
     padding:1em 0em 1em 0em;
     width: 80%;
@@ -188,6 +188,22 @@ a:hover {
     }
 }
 
-::placeholder, input :not(.numInput) {
-    color: black!important
+::placeholder, .flatpickr-input {
+    color: black!important;
+    outline:none!important;
+     border: none;
+     background: inherit;
+     text-align: center;
+     font-size: 1.1em;
+     margin: 1em
+}
+
+button{
+    background: #405C53;
+    padding: 1.5em;
+    width:9em;
+    border-radius: 8px
+}
+.flatpickr-weekdays, span.flatpickr-weekday, .flatpickr-months, .flatpickr-month, .flatpickr-current-month, .flatpickr-monthDropdown-months, .flatpickr-monthDropdown-months, .flatpickr-monthDropdown-months, .flatpickr-monthDropdown-month {
+    background: #405C53!important
 }
