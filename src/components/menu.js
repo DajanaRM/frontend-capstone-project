@@ -1,10 +1,10 @@
 
-import Heather from './heather'
+import Header from './header'
 const Menu = () =>
 {
 return(
     <>
-        <Heather />
+        <Header />
     </>
         )
 }

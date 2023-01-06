@@ -1,10 +1,10 @@
 
-import Heather from './heather'
+import Header from './header'
 const About = () =>
 {
 return(
     <>
-        <Heather />
+        <Header />
     </>
         )
 }

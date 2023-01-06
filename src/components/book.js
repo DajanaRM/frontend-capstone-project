@@ -1,11 +1,11 @@
 
-import Heather from './heather'
+import Header from './header'
 import BookForm from './bookForm'
 const Book = () =>
 {
 return(
         <div className='App'>
-            <Heather />
+            <Header />
             <BookForm classname='section'/>
         </div>
         )

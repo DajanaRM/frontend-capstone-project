@@ -15,6 +15,8 @@ function App() {
                 <Route path="/menu" element={<Menu/>} />
                 <Route path="/book-a-table" element={<Book/>} />
                 <Route path="/about" element={<About/>} />
+                <Route path="/order" element={<About/>} />
+                <Route path="/login" element={<About/>} />
                  </Routes>
         </Router>
    
