@@ -21,5 +21,6 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "permissions": ["https://raw.githubusercontent.com/Meta-Front-End-Developer-PC/capstone/master/api.js"]
 }

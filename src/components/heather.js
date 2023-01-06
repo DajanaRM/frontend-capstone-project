@@ -12,7 +12,7 @@ const Heather = () =>
 return(
     <>
      <header>
-            <img src={Logo} alt='logo' class='topLogo'/>
+            <img src={Logo} alt='logo' className='topLogo'/>
             <nav>
                 <Link to='/'>Home</Link>
                 <Link to='/menu'>Menu</Link>

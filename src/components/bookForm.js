@@ -1,10 +1,23 @@
 import Flatpickr from 'react-flatpickr'
-
+import {useEffect} from 'react'
 
 import Heather from './heather'
 require("flatpickr/dist/themes/material_green.css")
 const BookForm = () => {
-    const tables = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((a) => <option value={a}>{a}</option>)
+    const tables = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((a) => <option value={a} key={a}>{a}</option>)
+     let d = window['fetchAPI']
+   useEffect(() => {
+          
+            
+           
+            if(d) console.log(d(new Date()))
+            
+           
+       })
+        
+       //.then(response => console.log(response))
+   
+    
 return(
     <>
        <div className='columns' >
@@ -60,7 +73,7 @@ return(
              </div> 
              <div>
                    <label>
-                   Number of tables<br/>
+                   Number of guests<br/>
                    <select>
                    {tables}
                    </select>
