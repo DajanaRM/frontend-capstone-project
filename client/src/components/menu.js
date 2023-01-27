@@ -33,10 +33,8 @@ const Menu = () => {
                             let image = e.image
                             return <div className='section' key={e.name}>
                             <img src={require(`../assets/${image}`)}/>
-                            
-                            
                             <div className='dish'><h3>{e.name}  </h3><p className='price'>{e.price}</p></div>
-                            <div> Ingredients : {e.ingredients}</div>
+                            <div className='description'> Ingredients : {e.ingredients}</div>
                             <p className='description'>Description: {e.description}</p>
                             </div> })
             arr.push(res)
