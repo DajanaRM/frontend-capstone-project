@@ -28,17 +28,16 @@ const Menu = () => {
         .then(dat => {
           
             let dishes = dat.dishes
-           
             res =Object.values(dishes).map(e => { 
                             let image = e.image
                             return <div className='section' key={e.name}>
-                            <img src={require(`../assets/${image}`)}/>
+                            <img src={require(`../assets/${image}`)} alt={e.name}/>
                             <div className='dish'><h3>{e.name}  </h3><p className='price'>{e.price}</p></div>
                             <div className='description'> Ingredients : {e.ingredients}</div>
                             <p className='description'>Description: {e.description}</p>
                             </div> })
+                         
             arr.push(res)
-                    
             setDish(arr)
         })
         .catch((error) => {
@@ -46,10 +45,12 @@ const Menu = () => {
         })
     }, [])
 return(
-    <>
+    <div className='App'>
         <Header />
-        {dish}
-    </>
+        <div className='columns2'>
+            {dish}
+        </div>
+    </div>
         )
 }
 

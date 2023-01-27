@@ -32,7 +32,6 @@ app.post("/api", jsonParser, (req, res) => {
         
          const newPost = {
             "date" :req.body.date, 
-            "id": 1,
             "from": req.body.from,
             "to": req.body.to,
             "name": req.body.name,

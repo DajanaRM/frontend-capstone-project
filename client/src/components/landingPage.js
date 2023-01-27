@@ -39,12 +39,12 @@ const Main = () => {
                             let image = e.image
                             return <div className='section' key={e.name}>
                         
-                            <img src={require(`../assets/${image}`)}/>
+                            <img src={require(`../assets/${image}`)} alt={e.name}/>
                             <div className='dish'><h3>{e.name}  </h3><p className='price'>{e.price}</p></div>
                             <p className='description'>{e.description}</p>
                             </div> })
+                          
             arr.push(res)
-                    
             setDish(arr)
         })
         .catch((error) => {
@@ -55,7 +55,6 @@ const Main = () => {
 if(dish) return(
     <div className='App'>
        <Header />
-      
         <main>
             <div className='banner'>
                 <div className='lemon'>
@@ -65,7 +64,7 @@ if(dish) return(
                     <NavLink to='/book-a-table'><button className='reserve'>Reserve a Table</button></NavLink>
               
             </div>
-            <img src={Banner}/>
+            <img src={Banner} fetchpriority="high" alt='banner'/>
             </div>
             <div className='specials'>
                 <h1>This weeks specials!</h1>
@@ -77,7 +76,7 @@ if(dish) return(
         </main> 
       
         <footer>
-            <img src={Logo2}/>
+            <img src={Logo2} alt='logo'/>
             <div className='copyright'>Copyright Little Lemon</div>
         </footer>
         </div>

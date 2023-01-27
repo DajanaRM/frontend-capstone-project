@@ -22,7 +22,7 @@ const Header = () => {
 return(
         <header className={cls}>
             <nav>
-                <Link to='/'><img src={Logo} alt='logo' className='topLogo'/></Link>
+                <Link to='/'><img src={Logo} fetchpriority="high" alt='logo' className='topLogo'/></Link>
                 <NavLink to='/'>Home</NavLink>
                 <NavLink to='/menu'>Menu</NavLink>
                 <NavLink id='book-a-table' to='/book-a-table' >Reservations</NavLink>

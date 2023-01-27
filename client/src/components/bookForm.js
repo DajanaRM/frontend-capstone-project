@@ -187,12 +187,12 @@ return(
                 <div className={`${alertMessage} + alert`}> Sorry, not available at selected time</div>
             </div>
            {booking.name.length ?  <div className={`${confirmation} + confirmation`}> 
-                Reserve a table at Little Lemon<br/> <br/>{booking.date} From {booking.from} to {booking.to}<br/><br/>Name: {booking.name} 
+                Reserve a table at Little Lemon<br/> <br/>{booking.date} From {booking.from} to {booking.to}<br/><br/>Number of guests: {booking.guests}<br/><br/> Name: {booking.name} 
                     <button className='confirm' type="submit" onClick={() => (handleBooking(), setConfirmation('hide'))} disabled = {disabled}>
                             Confirm
                     </button> 
                     <button className='confirm red' onClick={() => setConfirmation('hide')}>
-                            Close
+                            Cancel
                     </button>
                      </div>
                     : ''}
