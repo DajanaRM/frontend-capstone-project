@@ -97,7 +97,7 @@ main{
     justify-content: space-between;
     align-items: center;
     padding-top: 4em;
-     width: 70%
+    width: 70%
 
    
 }
@@ -283,9 +283,11 @@ img{
 .owners{
     max-width:100%;
     overflow:hidden;
-    height:32em;
+    height:25em;
     margin-left:auto;
-    margin-right:auto
+    margin-right:auto;
+    margin-top: 5em;
+   
 }
 .about{
     display:grid;
@@ -341,6 +343,9 @@ a:active,  a:hover, a:focus, button:hover, button:disabled, .active, :target{
     }
     .banner{
         overflow: unset;
+        margin-top: 4em;
+        grid-template-columns: none
+       
     }
     .banner img{
         height:15em;
@@ -356,8 +361,40 @@ a:active,  a:hover, a:focus, button:hover, button:disabled, .active, :target{
         display: flex;
         flex-direction: column
     }
+    .specials{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 2em
+    }
+    .topLogo{
+        align-self: center;
+        margin-right: 0
+    }
+    .lemon{
+        width: 80%;
+         display: flex;
+        align-items: center
+    }
+    .columns2{
+        margin-top: 10em
+    }
+    .confirmation, .time{
+        display: flex;
+        flex-direction: column;
+        width: unset;
+        justify-content: space-evenly;
+        padding: 2em
+    }
+    .owners{
+       object-fit: contain;
+    }
 }
-
+.open{
+    display: block
+}
+.close{
+    display: none
+}
 ::placeholder, .flatpickr-input {
     font-size: 1em!important;
     color: #4B6059!important;

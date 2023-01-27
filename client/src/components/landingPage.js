@@ -64,7 +64,7 @@ if(dish) return(
                     <NavLink to='/book-a-table'><button className='reserve'>Reserve a Table</button></NavLink>
               
             </div>
-            <img src={Banner} fetchpriority="high" alt='banner'/>
+            <img src={Banner} fetchpriority="high" alt='banner' className={window.innerWidth <= 700 ? 'close' : 'open'}/>
             </div>
             <div className='specials'>
                 <h1>This weeks specials!</h1>
