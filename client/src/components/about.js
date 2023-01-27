@@ -5,7 +5,7 @@ const About = () =>
 {
 return(
     <div className='App'>
-        <Header />
+        <Header className='secondary'/>
          <div className='about'>
         <img src={Owners} className='owners' alt='Marion and Adrian' fetchpriority="high"/>
         <div className='about_us'>

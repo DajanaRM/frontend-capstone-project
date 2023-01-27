@@ -5,7 +5,7 @@ const Book = () =>
 {
 return(
         <div className='App'>
-            <Header />
+            <Header className='secondary'/>
             <BookForm/>
         </div>
         )

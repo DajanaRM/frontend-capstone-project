@@ -46,7 +46,7 @@ const Menu = () => {
     }, [])
 return(
     <div className='App'>
-        <Header />
+        <Header className='secondary'/>
         <div className='columns2'>
             {dish}
         </div>
